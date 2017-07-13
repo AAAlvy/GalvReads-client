@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Books</title>
+    <link rel="stylesheet" <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper light-blue lighten-2">
+        <a class="material-icons">library_books</a>
+        <a href="/Users/andrewalvarez/workspace/galvanize-reads/client/GalvReads-client/index.html" class="brand-logo center">Galvanize Reads</a>
+      </div>
+    </nav>
+
+<div class="container">
+    <div class="row">
+    <div class="col s2"
+        <!-- authors card -->
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Herman_Melville_1860.jpg/170px-Herman_Melville_1860.jpg" alt="Melville">
+          </div>
+          <div class="card-content">
+            <a class="card-title" href="/Users/andrewalvarez/workspace/galvanize-reads/client/GalvReads-client/authors.html">Authors</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="col s2"
+        <!--books card-->
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://images.signals.com/graphics/products/regular/HM7182_b.jpg" alt="classic-Dracula">
+          </div>
+          <div class="card-content">
+            <a class="card-title">Books</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="book-list">
+        <script id="book-template" type="text/x-handlebars-template">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="{{COVER_URL}}" alt="{{TITLE}}" class="book-cover-img"/>
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h5><b>{{TITLE}}</b></h5>
+              <h6>{{AUTHOR}}</h6>
+              <i>{{GENRE}}</i>
+            </div>
+            <div class="card-content">
+              <a>{{BOOK INFORMATION}}</a>
+            </div>
+          </div>
+        </div>
+      </script>
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  </body>
+</html>
